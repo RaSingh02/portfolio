@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>/blogs/</loc>
+    <lastmod>2022-03-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blogs/blog_5/</loc>
+    <lastmod>2022-03-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2022-03-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blogs/blog_4/</loc>
+    <lastmod>2022-03-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blogs/blog_3/</loc>
+    <lastmod>2022-02-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blogs/blog_2/</loc>
+    <lastmod>2022-02-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blogs/blog_1/</loc>
+    <lastmod>2022-01-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/</loc>
+  </url><url>
+    <loc>/tags/</loc>
+  </url>
+</urlset>

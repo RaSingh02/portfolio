@@ -1,0 +1,222 @@
+baseURL: ""
+languageCode: "en-us"
+title: "Randeep Singh"
+theme: hugo-profile
+
+markup:
+  holdmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - idenifier: blog
+      name: Blog
+      title: Blog Posts
+      url: /blogs
+      weight: 1
+
+params:
+  title: "Randeep Singh"
+  description: A hub for information about me and any projects I have worked on.
+
+  theme:
+    disableThemeToggle: false
+    defaultTheme: "dark"
+
+  color:
+    textColor: "#2C3333"
+    secondaryTextColor: "#F5F5F5"
+    backgroundColor: "#54BAB9"
+    primaryColor: "#F0F0F0"
+    secondaryColor: "#78C2C3"
+
+    darkmode:
+      textColor: "#F5F5F5"
+      secondaryTextColor: "#F5F5F5"
+      backgroundColor: "#313552"
+      primaryColor: "#F1E0AC"
+      secondaryColor: "#30475E"
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Randeep."
+    subtitle: "I code applications"
+    content: "A passionate computer scientist with primary focus on programming. I am comfortable using modern technologies to create websites that are functional, appealing, & easy on the eyes."
+    image: /Images/Bitmoji.png
+    button:
+      enable: true
+      name: "Resume"
+      url: https://randeepsingh.dev/resume.html
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/RaSingh02/
+        - icon: fab fa-linkedin-in
+          url: https://www.linkedin.com/in/randeep-singh-8096b31a5/
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    content: |-
+      I am a software developer with a passion for web and application development. I am currently going for my Computer Science BA with a mathematics minor at Clarkson University. I am currently interning at [Green Action Studio](https://greenactionstudio.com/) in Schenectady, NY. 
+
+      I am currently working on a chat server/client that uses ElGamal Encryption in Python for my Cryptography class.
+    skills:
+      enable: true
+      title: "Technologies that I have experience with:"
+      items:
+        - "HTML"
+        - "CSS"
+        - "JavaScript"
+        - "React"
+        - "Node"
+        - "Bootstrap"
+        - "Python"
+        - "Java"
+        - "C++"
+        - "TailwindCSS"
+
+  # Experience
+  experience:
+    enable: true
+    items:
+        - job: "Software Engineer Intern"
+          company: "Green Action Studio"
+          companyUrl: "https://greenactionstudio.com/"
+          date: "Mar 2022 - Aug 2022"
+          content: |-
+            More information to be added later.
+
+  # Education
+  education:
+    enable: true
+    items:
+      - title: "Bachelor of Science in Computer Science"
+        school:
+          name: "Clarkson University"
+          url: "https://www.clarkson.edu/"
+        date: "2020 - 2023"
+        GPA: "3.1 out of 4.0"
+      - title: "High School"
+        school:
+          name: "Mohonasen High School"
+          url: "https://www.mohonasen.org/"
+        date: "2016 - 2020"
+        GPA: "3.3 out of 4.0"
+
+  #Projects
+  projects:
+    enable: true
+    items:
+      - title: Weather App
+        content: A basic react based weather app using OpenWeather's API. More information can be found on the GitHub repo.
+        image: /Images/projects/weather.png
+        featured:
+          name: Demo
+          link: https://www.randeepsingh.dev/weather/
+        badges:
+          - "React"
+          - "HTML"
+          - "CSS"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/RaSingh02/weather-website
+
+      - title: Fetch API App
+        content: Basic fetch API app for South Park characters. More information can be found on the GitHub repo.
+        image: /Images/projects/fetch.JPG
+        featured:
+          name: Demo
+          link: https://rasingh02.github.io/fetch-api-app/
+        badges:
+          - "HTML"
+          - "JavaScript"
+          - "CSS"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/RaSingh02/fetch-api-app
+
+      - title: Random Quotes App
+        content: This mini-web page is a random quote generator, that allows the user to generate another random quote or go back to the previous quote. Each time the generate button is pressed, a randomly generated image is displayed as the background. There are some animations on the buttons and the title using the anime.css library. There are a total of 12 quotes and 12 background images. However, the images are randomly generated each time the page is refreshed. The images are sourced using Lorem Picsum.
+        image: /Images/projects/quote.png
+        featured:
+          name: Demo
+          link: https://rasingh02.github.io/quotes-app/
+        badges:
+          - "JavaScript"
+          - "CSS"
+          - "HTML"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/RaSingh02/quotes-app
+
+      - title: Bootstrap Storefront
+        content: A basic storefront example made primarily using the BootStrap framework.
+        image: /Images/projects/bookstore.png
+        featured:
+          name: Demo
+          link: https://rasingh02.github.io/storefront/
+        badges:
+          - "CSS"
+          - "HTML"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/RaSingh02/storefront
+
+      - title: Game Library
+        content: A simple game library consiting of a couple of games within the website. Can play against computer for tic-tac-toe or person.
+        image: /Images/projects/games.png
+        featured:
+          name: Demo
+          link: https://rasingh02.github.io/game-library/
+        badges:
+          - "CSS"
+          - "HTML"
+          - "JavaScript"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/RaSingh02/game-library
+
+      - title: CS350 Team Website
+        content: A team website for CS350 that was made using the Bootstrap framework. Has team documents and weekly reports along with about us cards.
+        image: /Images/projects/team.png
+        featured:
+          name: Demo
+          link: https://rasingh02.github.io/team-website/
+        badges:
+          - "HTML"
+          - "CSS"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/RaSingh02/team-website
+
+      - title: RecipeBuddy
+        content: Semester project for CS350. A application to store recipes with functionality to see recipies, add, remove, and edit them. 
+        image: /Images/projects/recipebuddy.png
+        featured:
+          name: Demo
+          link: https://recipebuddy-ppsm.herokuapp.com/
+        badges:
+          - "JavaScript"
+          - "CSS"
+          - "HTML"
+          - "Python"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/RaSingh02/RecipeBuddy
+
+  contact:
+    enable: true
+    content: Don't hesitate to reach out. I'm always down to chat with new people. 
+    email: ra.singh0502@gmail.com
+    btnName: Send
+
+  footer:
+    recentPosts: false
+    socialNetworks:
+      github: https://github.com/RaSingh02/
+      linkedin: https://www.linkedin.com/in/randeep-singh-8096b31a5/

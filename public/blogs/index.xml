@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Randeep Singh</title>
+    <link>/blogs/</link>
+    <description>Recent content in Blogs on Randeep Singh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 29 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fire Drills</title>
+      <link>/blogs/blog_5/</link>
+      <pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blogs/blog_5/</guid>
+      <description>What are fire drills? Fire drills are practices in software development meant to explore scenarios that can break projects. They can help explore them and identify additional work needed to prevent such incidents from occurring and preventing future issues. Many companies have systems in place to force engineers to create resilient products at the beginning instead of rushing out half-baked ideas that may fail when stressed. A famous system that comes to mind is Netflix&amp;rsquo;s Chaos Monkey.</description>
+    </item>
+    
+    <item>
+      <title>Database Types</title>
+      <link>/blogs/blog_4/</link>
+      <pubDate>Tue, 01 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blogs/blog_4/</guid>
+      <description>Types of Databases There are three general database types based on the following models:
+ Relational Database Non-Relational Database Object-Oriented Database  We will be taking a look at all three types of databases. The main difference between them is the way information looks inside the database, as such each model has its own management system and data relationships.
+Relational Database The relational database is the most used out of the three and is the oldest model.</description>
+    </item>
+    
+    <item>
+      <title>Modern JS &amp; OOP vs. FP</title>
+      <link>/blogs/blog_3/</link>
+      <pubDate>Thu, 17 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blogs/blog_3/</guid>
+      <description>Modern Javascript Javascript is one of the most used platforms for application and website development to this day. In the beginning, due to the lack of back-end support and lack of technologies, Javascript was mostly used for front-end development. The creation of other technologies, such as NodeJS, allowed Javascript to work as the main back-end handler. NodeJS allowed Javascript to run like a server and not only inside the browser. With the creation of NodeJS came out NPM, or Node Package Manager.</description>
+    </item>
+    
+    <item>
+      <title>User-Experience Design</title>
+      <link>/blogs/blog_2/</link>
+      <pubDate>Fri, 04 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blogs/blog_2/</guid>
+      <description>The Rise of User-Experience Design What is User Experience Design? User Experience is the feeling a user experience while interacting with a website or application. The user experience is a critical step in the development cycle as it focuses on fulfilling the user&amp;rsquo;s needs or desires. User experience is also a strategic method to help avoid expensive revisions down the line. Companies can not change whole elements on their products without foreseeing the consequences of such changes.</description>
+    </item>
+    
+    <item>
+      <title>Agile vs. Scrum</title>
+      <link>/blogs/blog_1/</link>
+      <pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blogs/blog_1/</guid>
+      <description>What is Agile? First, we should focus on the definition of Agile and implementations that exist within the DevOps world. According to the Agile Manifesto website, the core of Agile is to bring people back into the construction of software, breaking down communication barriers between developers, project managers, and other members of the team. The final core is the idea of embracing change. There are two versions of Agile we will be talking about in this post.</description>
+    </item>
+    
+  </channel>
+</rss>
