@@ -62,22 +62,27 @@ params:
     enable: true
     title: "About Me"
     content: |-
-      I am a software developer with a passion for web and application development. I am currently going for my Computer Science BA with a mathematics minor at Clarkson University. I am currently interning at [Green Action Studio](https://greenactionstudio.com/) in Schenectady, NY. 
+      I am a software developer with a passion for web and application development. I am currently going for my Computer Science BA with a mathematics minor at Clarkson University. 
 
-      I am currently working on a chat server/client that uses ElGamal Encryption in Python for my Cryptography class.
+      I am currently working on rebuilding a recipe app that was built last year using my new skills I have learned throughout my internship.
     skills:
       enable: true
       title: "Technologies that I have experience with:"
       items:
+        - "AWS Cloud Services"
+          - "Lambda"
+          - "Cloudformation"
+          - "EventBridge"
+          - "MSK"
         - "HTML"
         - "CSS"
         - "JavaScript"
         - "React"
         - "Node"
-        - "Bootstrap"
         - "Python"
         - "Java"
         - "C++"
+        - "Bootstrap"
         - "TailwindCSS"
 
   # Experience
@@ -87,9 +92,12 @@ params:
         - job: "Software Engineer Intern"
           company: "Green Action Studio"
           companyUrl: "https://greenactionstudio.com/"
-          date: "Mar 2022 - Aug 2022"
+          date: "May 2022 - Aug 2022"
           content: |-
-            More information to be added later.
+            Migrated back-end systems to utilize AWS event-driven architecture. 
+            Developed and integreated new features into client-focused application such as admin tool websites and public mobile app. 
+            Increased code coverage by implementing new unit tests.
+            
 
   # Education
   education:
@@ -112,6 +120,24 @@ params:
   projects:
     enable: true
     items:
+      - title: Charge Port EV Charging
+        content: Green Action Studio's mobile to give EV drivers access to Livingston Energy Group's EV network.
+        image: /Images/projects/chargeport.png
+        badges:
+          - "React Native"
+          - "TypeScript"
+          - "AWS Cloud Services"
+          - "TailwindCSS"
+        links:
+          - icon: fab fa-link
+            url: https://apps.apple.com/us/app/charge-port-ev-charging/id1581494936
+
+      - title: Back-End API
+        content: Back-End API to connect allow our different microservices to communicate to each other.
+        badges:
+          - "TypeScript"
+          - "AWS Cloud Services"
+
       - title: Weather App
         content: A basic react based weather app using OpenWeather's API. More information can be found on the GitHub repo.
         image: /Images/projects/weather.png
