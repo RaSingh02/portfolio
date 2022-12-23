@@ -2,17 +2,26 @@
 <html>
 
 <head>
-	<meta name="generator" content="Hugo 0.97.3" /><meta charset="UTF-8">
+	<meta name="generator" content="Hugo 0.108.0"><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="icon" href= type="image/gif">
+<meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-    href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
+<link rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+</noscript>
 
 
 <link rel="stylesheet" href="/css/font.css" media="all">
@@ -20,19 +29,16 @@
 
 
 <meta property="og:title" content="Randeep Singh" />
-<meta property="og:description" content="A hub for information about me and any projects I have worked on." />
+<meta property="og:description" content="A collection of information about Randeep Singh and any projects he has worked on." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/" /><meta property="og:site_name" content="Randeep Singh" />
 
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Randeep Singh"/>
-<meta name="twitter:description" content="A hub for information about me and any projects I have worked on."/>
+<meta name="twitter:description" content="A collection of information about Randeep Singh and any projects he has worked on."/>
 
 
-
-<link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all">
-<link rel="stylesheet" href="/css/header.css" media="all">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"><link rel="stylesheet" href="/css/header.css" media="all">
 <link rel="stylesheet" href="/css/footer.css" media="all">
 
 
@@ -43,12 +49,12 @@
 
 <style>
     :root {
-        --text-color: #2C3333;
-        --text-secondary-color: #F5F5F5;
-        --background-color: #54BAB9;
+        --text-color: #343a40;
+        --text-secondary-color: #6c757d;
+        --background-color: #eaedf0;
         --secondary-background-color: #64ffda1a;
-        --primary-color: #F0F0F0;
-        --secondary-color: #78C2C3;
+        --primary-color: #007bff;
+        --secondary-color: #f8f9fa;
 
          
         --text-color-dark: #F5F5F5;
@@ -64,9 +70,36 @@
         line-height: 1.5;
         text-align: left;
     }
+
+    html {
+        background-color: var(--background-color) !important;
+    }
+
+    body::-webkit-scrollbar {
+        width: .5em;
+        height: .5em;
+        background-color: var(--background-color);
+    }
+    
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px var(--background-color);
+        border-radius: 1rem;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background-color: var(--secondary-color);
+        outline: 1px solid var(--background-color);
+    }
+
+    #search-content::-webkit-scrollbar {
+        width: .5em;
+        height: .1em;
+        background-color: var(--background-color);
+    }
 </style>
 
-<meta name="description" content=A&#32;hub&#32;for&#32;information&#32;about&#32;me&#32;and&#32;any&#32;projects&#32;I&#32;have&#32;worked&#32;on.>
+<meta name="description" content=A&#32;collection&#32;of&#32;information&#32;about&#32;Randeep&#32;Singh&#32;and&#32;any&#32;projects&#32;he&#32;has&#32;worked&#32;on.>
 <link rel="stylesheet" href="/css/index.css" media="all">
 <link rel="stylesheet" href="/css/projects.css" media="all">
 
@@ -82,7 +115,6 @@ Randeep Singh
 <body class="light" onload="loading()">
   
   
-  <script src="/bootstrap-5/js/bootstrap.bundle.js"></script>
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -97,7 +129,7 @@ Randeep Singh
 
 
 <header>
-    <nav class="pt-3 navbar navbar-expand-lg">
+    <nav class="pt-3 navbar navbar-expand-lg animate">
         <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
             
             <a class="navbar-brand primary-font text-wrap" href="/">
@@ -105,6 +137,13 @@ Randeep Singh
                 Randeep Singh
                 
             </a>
+
+            
+                <div>
+                    <input id="search" autocomplete="off" class="form-control mr-sm-2 d-none d-md-block" placeholder="Search ..."
+                        aria-label="Search" oninput="searchOnChange(event)">
+                </div>
+            
 
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
@@ -118,29 +157,45 @@ Randeep Singh
             <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
                 <ul class="navbar-nav ms-auto text-center">
                     
+                        <li class="nav-item navbar-text d-block d-md-none">
+                            <div class="nav-link">
+                                <input id="search" autocomplete="off" class="form-control mr-sm-2" placeholder="Search ..." aria-label="Search" oninput="searchOnChange(event)">
+                            </div>
+                        </li>
+                    
+
+                    
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="/#about" aria-label="about">About</a>
+                        <a class="nav-link" href="/#about" aria-label="about">
+                            About Me
+                        </a>
                     </li>
                     
 
                     
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="/#experience"
-                            aria-label="experience">Experience</a>
+                            aria-label="experience">
+                            Experience
+                        </a>
                     </li>
                     
 
                     
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="/#education"
-                            aria-label="education">Education</a>
+                            aria-label="education">
+                            Education
+                        </a>
                     </li>
                     
 
                     
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="/#projects"
-                            aria-label="projects">Projects</a>
+                            aria-label="projects">
+                            Projects
+                        </a>
                     </li>
                     
 
@@ -149,7 +204,9 @@ Randeep Singh
                     
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="/#contact"
-                            aria-label="contact">Contact</a>
+                            aria-label="contact">
+                            Contact
+                        </a>
                     </li>
                     
 
@@ -158,46 +215,49 @@ Randeep Singh
                     
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="/blogs" title="Blog Posts">
+                        <a class="nav-link" href="/blogs" title="Blog posts">
                             
                             Blog
                         </a>
                     </li>
                     
                     
+
+                    
+                    <li class="nav-item navbar-text">
+                        
+                        <div class="text-center">
+                            <button id="theme-toggle">
+                                <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                </svg>
+                                <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="5"></circle>
+                                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                    
+
                 </ul>
 
-                
-                
-                <div class="text-center">
-                    <button id="theme-toggle">
-                        <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                        </svg>
-                        <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="5"></circle>
-                            <line x1="12" y1="1" x2="12" y2="3"></line>
-                            <line x1="12" y1="21" x2="12" y2="23"></line>
-                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                            <line x1="1" y1="12" x2="3" y2="12"></line>
-                            <line x1="21" y1="12" x2="23" y2="12"></line>
-                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                        </svg>
-                    </button>
-                </div>
-            
-                
             </div>
         </div>
     </nav>
 </header>
 <div id="content">
-<section id="hero" class="py-5">
+<section id="hero" class="py-5 align-middle">
     <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
         <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-8 content" id="primary-font">
+            <div class="col-sm-12 col-md-12 col-lg-8 content animate" id="primary-font">
                 <span class="subtitle">
                     Hi, my name is
                 </span>
@@ -205,15 +265,16 @@ Randeep Singh
                     Randeep.
                 </h2>
                 <h3>
-                    I code applications
+                    I build applications.
                 </h3>
                 <p class="hero-content">
-                    A passionate computer scientist with primary focus on programming. I am comfortable using modern technologies to create websites that are functional, appealing, &amp; easy on the eyes.
+                    A passionate computer scientist with primary focus on programming. I tend to use modern technologies to create websites that are functional &amp; appealing.
                 </p>
                 <div class="row">
                     <div class="col-auto h-100">
                         
-                        <a href="https://randeepsingh.dev/resume.html" class="btn">
+                        <a href="/resume/Resume.pdf" class="btn" download
+			  >
                             Resume
                         </a>
                         
@@ -239,10 +300,10 @@ Randeep Singh
             </div>
             <div class="col-sm-12 col-md-12 col-lg-4">
                 <div class="row justify-content-center">
-                    <div class="col-sm-12 col-md-9 pt-5 image px-5 px-md-5 px-lg-0 text-center">
+                    <div class="col-sm-12 col-md-9 pt-5 image animate px-5 px-md-5 px-lg-0 text-center">
                         <img src="/Images/Bitmoji.png" 
-                            class="img-thumbnail img-fluid mx-auto" 
-                            alt="My Bitmoji Image"
+                            class="img-thumbnail mx-auto" 
+                            alt=""
                         >
                     </div>
                 </div>
@@ -519,25 +580,19 @@ Randeep Singh
         <div class="bg-transparent row justify-content-center px-3 py-5">
             
             <div class="col-sm-12 col-md-12 col-lg-8 content">
-                <p>I am a software developer with a passion for web and application development. I am currently going for my Computer Science BA with a mathematics minor at Clarkson University. I am currently interning at <a href="https://greenactionstudio.com/">Green Action Studio</a> in Schenectady, NY.</p>
-<p>I am currently working on a chat server/client that uses ElGamal Encryption in Python for my Cryptography class.</p>
+                <p>I am a software developer with a passion for web and application development. I am currently working towards my Computer Science BS degree with a minor in mathematics at Clarkson University.</p>
+<p>I am currently not working on any projects due to school. However, I am currently looking for internships and full-time positions starting June 2023.</p>
 
 
                 
-                Technologies that I have experience with:
+                Here are a few technologies I&#39;ve been working with recently:
                 <ul>
                     
-                    <li>HTML</li>
-                    
-                    <li>CSS</li>
+                    <li>Amazon Web Services</li>
                     
                     <li>JavaScript</li>
                     
-                    <li>React</li>
-                    
-                    <li>Node</li>
-                    
-                    <li>Bootstrap</li>
+                    <li>TypeScript</li>
                     
                     <li>Python</li>
                     
@@ -545,7 +600,17 @@ Randeep Singh
                     
                     <li>C++</li>
                     
-                    <li>TailwindCSS</li>
+                    <li>MongoDB</li>
+                    
+                    <li>SQL</li>
+                    
+                    <li>HTML</li>
+                    
+                    <li>CSS</li>
+                    
+                    <li>React</li>
+                    
+                    <li>Node</li>
                     
                 </ul>
                 
@@ -567,12 +632,11 @@ Randeep Singh
                             <div 
                                 class="nav-link active bg-transparent" 
                                 aria-selected="true" 
-                                type="button"
                                 role="tab" 
                                 data-bs-toggle="pill"
-                                id='Green-Action-Studio-Mar-2022---Aug-2022-tab'
-                                data-bs-target='#pills-Green-Action-Studio-Mar-2022---Aug-2022'
-                                aria-controls='Green-Action-Studio-Mar-2022---Aug-2022' 
+                                id='Green-Action-Studio-May-2022---August-2022-tab'
+                                data-bs-target='#pills-Green-Action-Studio-May-2022---August-2022'
+                                aria-controls='Green-Action-Studio-May-2022---August-2022' 
                             >
                                 Green Action Studio
                             </div>
@@ -586,15 +650,15 @@ Randeep Singh
                         <div 
                             class="tab-pane fade show active bg-transparent" 
                             role="tabpanel"
-                            id='pills-Green-Action-Studio-Mar-2022---Aug-2022'
-                            aria-labelledby='pills-Green-Action-Studio-Mar-2022---Aug-2022-tab'
+                            id='pills-Green-Action-Studio-May-2022---August-2022'
+                            aria-labelledby='pills-Green-Action-Studio-May-2022---August-2022-tab'
                         >
                             <div>
                                 <span class="h4">Software Engineer Intern</span>
                                 <small>-</small>
                                 <a href="https://greenactionstudio.com/" target="_blank">Green Action Studio</a>
                                 <div class="pb-1">
-                                    <small>Mar 2022 - Aug 2022</small>
+                                    <small>May 2022 - August 2022</small>
                                     
                                     <span class="p-2">
                                         <span 
@@ -610,9 +674,18 @@ Randeep Singh
                                 </div>
 
                                 
+                                <div class="py-2 featuredLink">
+                                    <a class="p-2 px-4 btn btn-outline-primary btn-sm" href=https://apps.apple.com/us/app/charge-port-ev-charging/id1581494936 target="_blank">
+                                        One of the projects I worked on 
+                                    </a>
+                                </div>
+                                
                             </div>
 
-                            More information to be added later.
+                            Migrated the old backend to a new event-driven architecture using Amazon Web Services.
+Developed and integrated multiple new backend APIs using Node.js, Amazon Web Services, MongoDB, TypeScript.
+Developed and integrated a new feature to the mobile application using React Native.
+Increased code coverage by implementing unit tests using Jest.
                         </div>
                         
                         
@@ -631,6 +704,14 @@ Randeep Singh
             
             <div class="col-12 p-0">
                 <div class="row row align-items-center justify-content-center m-1 mb-4">
+                    
+                    <div class="col-md-1 text-center me-2 p-0 d-none d-md-block">
+                        <div class="py-2">
+                            <span class="index shadow-lg">
+                                1
+                            </span>
+                        </div>
+                    </div>
                     
 
                     <div class="col-md-9">
@@ -671,6 +752,14 @@ Randeep Singh
             <div class="col-12 p-0">
                 <div class="row row align-items-center justify-content-center m-1 mb-4">
                     
+                    <div class="col-md-1 text-center me-2 p-0 d-none d-md-block">
+                        <div class="py-2">
+                            <span class="index shadow-lg">
+                                2
+                            </span>
+                        </div>
+                    </div>
+                    
 
                     <div class="col-md-9">
                         <div class="card">
@@ -678,7 +767,7 @@ Randeep Singh
                                 <div class="float-end">
                                     <small>2016 - 2020</small>
                                 </div>
-                                <h5 class="card-title">High School</h5>
+                                <h5 class="card-title">Bachelor of Science in Computer Science</h5>
                                 
                                 
                                 <a href="https://www.mohonasen.org/" target="_blank">
@@ -697,7 +786,13 @@ Randeep Singh
                                 </div>
                                 
                                 <div class="py-1 education-content">
-                                    
+                                    <p>Extracurricular Activities</p>
+<ul>
+<li>National Honor Society Member: 2018 - 2020</li>
+<li>Secretary of Robotics Club</li>
+<li>Siena College High School Programming Contest: 2018</li>
+</ul>
+
                                 </div>
 
                                 
@@ -718,7 +813,74 @@ Randeep Singh
         <div class="row justify-content-center px-3 px-md-5">
             
             <div class="col-lg-4 col-md-6 my-3">
-                <div class="card my-3 h-100 text-center" title="Weather App">
+                <div class="card my-3 h-100" title="Charge Port EV Charging">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/Images/projects/chargeport.png" alt="Charge Port EV Charging">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">TypeScript</span>
+                            
+                            <span class="badge badge-secondary">React Native</span>
+                            
+                            <span class="badge badge-secondary">AWS Cloud Services</span>
+                            
+                            <span class="badge badge-secondary">TailwindCSS</span>
+                            
+                            <span class="badge badge-secondary">MongoDB</span>
+                            
+                            <span class="badge badge-secondary">Node</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Charge Port EV Charging</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            Green Action Studio&#39;s mobile application. I worked on adding a new stage to let users know to plug-in the cable to their vehicle. Worked on the backend API from the ground up using AWS Cloud Services.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://apps.apple.com/us/app/charge-port-ev-charging/id1581494936" target="_blank">
+                                <i class="fab fa-link"></i>
+                            </a>
+                        </span>
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Back-End API">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/Images/projects/aws.jpg" alt="Back-End API">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">TypeScript</span>
+                            
+                            <span class="badge badge-secondary">AWS Cloud Services</span>
+                            
+                            <span class="badge badge-secondary">MongoDB</span>
+                            
+                            <span class="badge badge-secondary">Node</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Back-End API</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            External API for Green Action Studio that connects multiple different microservices and applications together uisng AWS Cloud Services. Worked on the API from the ground up and connected it to the new Charge Port API.
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Weather App">
                     <div class="card-head">
                         <img class="card-img-top" src="/Images/projects/weather.png" alt="Weather App">
                     </div>
@@ -759,7 +921,7 @@ Randeep Singh
             </div>
             
             <div class="col-lg-4 col-md-6 my-3">
-                <div class="card my-3 h-100 text-center" title="Fetch API App">
+                <div class="card my-3 h-100" title="Fetch API App">
                     <div class="card-head">
                         <img class="card-img-top" src="/Images/projects/fetch.JPG" alt="Fetch API App">
                     </div>
@@ -800,7 +962,7 @@ Randeep Singh
             </div>
             
             <div class="col-lg-4 col-md-6 my-3">
-                <div class="card my-3 h-100 text-center" title="Random Quotes App">
+                <div class="card my-3 h-100" title="Random Quotes App">
                     <div class="card-head">
                         <img class="card-img-top" src="/Images/projects/quote.png" alt="Random Quotes App">
                     </div>
@@ -841,7 +1003,7 @@ Randeep Singh
             </div>
             
             <div class="col-lg-4 col-md-6 my-3">
-                <div class="card my-3 h-100 text-center" title="Bootstrap Storefront">
+                <div class="card my-3 h-100" title="Bootstrap Storefront">
                     <div class="card-head">
                         <img class="card-img-top" src="/Images/projects/bookstore.png" alt="Bootstrap Storefront">
                     </div>
@@ -880,7 +1042,7 @@ Randeep Singh
             </div>
             
             <div class="col-lg-4 col-md-6 my-3">
-                <div class="card my-3 h-100 text-center" title="Game Library">
+                <div class="card my-3 h-100" title="Game Library">
                     <div class="card-head">
                         <img class="card-img-top" src="/Images/projects/games.png" alt="Game Library">
                     </div>
@@ -921,7 +1083,7 @@ Randeep Singh
             </div>
             
             <div class="col-lg-4 col-md-6 my-3">
-                <div class="card my-3 h-100 text-center" title="CS350 Team Website">
+                <div class="card my-3 h-100" title="CS350 Team Website">
                     <div class="card-head">
                         <img class="card-img-top" src="/Images/projects/team.png" alt="CS350 Team Website">
                     </div>
@@ -960,7 +1122,7 @@ Randeep Singh
             </div>
             
             <div class="col-lg-4 col-md-6 my-3">
-                <div class="card my-3 h-100 text-center" title="RecipeBuddy">
+                <div class="card my-3 h-100" title="RecipeBuddy">
                     <div class="card-head">
                         <img class="card-img-top" src="/Images/projects/recipebuddy.png" alt="RecipeBuddy">
                     </div>
@@ -991,12 +1153,6 @@ Randeep Singh
                         </span>
                         
                         
-                        <span class="float-end">
-                            <a class="btn btn-sm" href="https://recipebuddy-ppsm.herokuapp.com/" target="_blank">
-                                Demo
-                            </a>
-                        </span>
-                        
                     </div>
                     
                 </div>
@@ -1009,12 +1165,12 @@ Randeep Singh
 
 <section id="contact" class="py-5">
     <div class="container">
-        <h3 class="text-center">Get in Touch!</h3>
+        <h3 class="text-center">Get in Touch</h3>
         <div class="px-0 px-md-5 px-lg-5">
             <div class="row justify-content-center px-md-5">
                 <div class="col-md-8 py-3">
                     <div class="text-center">
-                        Don&rsquo;t hesitate to reach out. I&rsquo;m always down to chat with new people.
+                        Feel free to contact me for any questions or if you just want to connect!
                     </div>
                     
                     <form action="https://formspree.io/f/moqrkglr" method="POST">
@@ -1041,6 +1197,71 @@ Randeep Singh
 
   </div><footer>
     <div class="container py-3" id="recent-posts">
+    
+    
+    
+    
+    <div class="h3 text-center text-secondary py-3">
+        Recent Posts
+    </div>
+    <div class="row justify-content-center">
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/blogs/blog_5/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Fire Drills">Fire Drills</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p>What are fire drills? Fire drills are practices in software development meant to explore scenarios that can break projects. They can help explore them and identify additional work needed to prevent such incidents from occurring and preventing future issues. Many companies have systems in place to …</p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">March 29, 2022</span>
+                    <a href="/blogs/blog_5/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/blogs/blog_4/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Database Types">Database Types</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p>Types of Databases There are three general database types based on the following models:
+Relational Database Non-Relational Database Object-Oriented Database We will be taking a look at all three types of databases. The main difference between them is the way information looks inside the database, …</p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">March 1, 2022</span>
+                    <a href="/blogs/blog_4/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/blogs/blog_3/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Modern JS &amp; OOP vs. FP">Modern JS &amp; OOP vs. FP</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p>Modern Javascript Javascript is one of the most used platforms for application and website development to this day. In the beginning, due to the lack of back-end support and lack of technologies, Javascript was mostly used for front-end development. The creation of other technologies, such as …</p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">February 17, 2022</span>
+                    <a href="/blogs/blog_3/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
     
 </div><div class="text-center pt-2">
     
@@ -1092,10 +1313,10 @@ Randeep Singh
 </div><div class="container py-4">
     <div class="row justify-content-center">
         <div class="col-md-4 text-center">
-            &copy; 2022  All Rights Reserved
+            &copy; 2022  Randeep Singh
         </div>
     </div>
-</div></footer>
+</div></footer><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 <script>
     if (document.body.className.includes("light")) {
         document.body.classList.add('dark');
@@ -1132,6 +1353,20 @@ Randeep Singh
             document.getElementById("loading-icons").style.display = "block";
         } catch(err) {}
     }
-</script></body>
+</script>
+
+
+    <script src="/js/search.js"></script>
+
+
+
+
+
+
+
+  <section id="search-content" class="py-2">
+    <div class="container" id="search-results"></div>
+  </section>
+</body>
 
 </html>

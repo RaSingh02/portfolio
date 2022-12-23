@@ -23,7 +23,7 @@
       
       <guid>/blogs/blog_4/</guid>
       <description>Types of Databases There are three general database types based on the following models:
- Relational Database Non-Relational Database Object-Oriented Database  We will be taking a look at all three types of databases. The main difference between them is the way information looks inside the database, as such each model has its own management system and data relationships.
+Relational Database Non-Relational Database Object-Oriented Database We will be taking a look at all three types of databases. The main difference between them is the way information looks inside the database, as such each model has its own management system and data relationships.
 Relational Database The relational database is the most used out of the three and is the oldest model.</description>
     </item>
     

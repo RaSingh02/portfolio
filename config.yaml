@@ -3,34 +3,50 @@ languageCode: "en-us"
 title: "Randeep Singh"
 theme: hugo-profile
 
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
 markup:
-  holdmark:
+  goldmark:
     renderer:
       unsafe: true
 
 Menus:
   main:
-    - idenifier: blog
+    - identifier: blog
       name: Blog
-      title: Blog Posts
+      title: Blog posts
       url: /blogs
       weight: 1
 
 params:
   title: "Randeep Singh"
-  description: A hub for information about me and any projects I have worked on.
+  description: A collection of information about Randeep Singh and any projects he has worked on.
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: true
+
+  animate: true
 
   theme:
     disableThemeToggle: false
     defaultTheme: "dark"
 
-  color:
-    textColor: "#2C3333"
-    secondaryTextColor: "#F5F5F5"
-    backgroundColor: "#54BAB9"
-    primaryColor: "#F0F0F0"
-    secondaryColor: "#78C2C3"
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
 
+  color:
     darkmode:
       textColor: "#F5F5F5"
       secondaryTextColor: "#F5F5F5"
@@ -38,18 +54,32 @@ params:
       primaryColor: "#F1E0AC"
       secondaryColor: "#30475E"
 
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    brandName: "Randeep Singh"
+    disableSearch: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: true
+      disableContact: false
+
   # Hero
   hero:
     enable: true
     intro: "Hi, my name is"
     title: "Randeep."
-    subtitle: "I code applications"
-    content: "A passionate computer scientist with primary focus on programming. I am comfortable using modern technologies to create websites that are functional, appealing, & easy on the eyes."
+    subtitle: "I build applications."
+    content: "A passionate computer scientist with primary focus on programming. I tend to use modern technologies to create websites that are functional & appealing."
     image: /Images/Bitmoji.png
     button:
       enable: true
       name: "Resume"
-      url: https://randeepsingh.dev/resume.html
+      url: "/resume/Resume.pdf"
+      download: true
+      newPage: false
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
@@ -62,46 +92,49 @@ params:
     enable: true
     title: "About Me"
     content: |-
-      I am a software developer with a passion for web and application development. I am currently going for my Computer Science BA with a mathematics minor at Clarkson University. 
+      I am a software developer with a passion for web and application development. I am currently working towards my Computer Science BS degree with a minor in mathematics at Clarkson University.
 
-      I am currently working on rebuilding a recipe app that was built last year using my new skills I have learned throughout my internship.
+      I am currently not working on any projects due to school. However, I am currently looking for internships and full-time positions starting June 2023.
     skills:
       enable: true
-      title: "Technologies that I have experience with:"
+      title: "Here are a few technologies I've been working with recently:"
       items:
-        - "AWS Cloud Services"
-          - "Lambda"
-          - "Cloudformation"
-          - "EventBridge"
-          - "MSK"
-        - "HTML"
-        - "CSS"
+        - "Amazon Web Services"
         - "JavaScript"
-        - "React"
-        - "Node"
+        - "TypeScript"
         - "Python"
         - "Java"
         - "C++"
-        - "Bootstrap"
-        - "TailwindCSS"
+        - "MongoDB"
+        - "SQL"
+        - "HTML"
+        - "CSS"
+        - "React"
+        - "Node"
 
   # Experience
   experience:
     enable: true
+    # title: "Custom Name"
     items:
-        - job: "Software Engineer Intern"
-          company: "Green Action Studio"
-          companyUrl: "https://greenactionstudio.com/"
-          date: "May 2022 - Aug 2022"
-          content: |-
-            Migrated back-end systems to utilize AWS event-driven architecture. 
-            Developed and integreated new features into client-focused application such as admin tool websites and public mobile app. 
-            Increased code coverage by implementing new unit tests.
-            
+      - job: "Software Engineer Intern"
+        company: "Green Action Studio"
+        companyUrl: "https://greenactionstudio.com/"
+        date: "May 2022 - August 2022"
+        featuredLink:
+          enable: true
+          name: "One of the projects I worked on"
+          url: "https://apps.apple.com/us/app/charge-port-ev-charging/id1581494936"
+        content: |-
+          Migrated the old backend to a new event-driven architecture using Amazon Web Services.
+          Developed and integrated multiple new backend APIs using Node.js, Amazon Web Services, MongoDB, TypeScript.
+          Developed and integrated a new feature to the mobile application using React Native.
+          Increased code coverage by implementing unit tests using Jest.
 
   # Education
   education:
     enable: true
+    index: true
     items:
       - title: "Bachelor of Science in Computer Science"
         school:
@@ -109,34 +142,44 @@ params:
           url: "https://www.clarkson.edu/"
         date: "2020 - 2023"
         GPA: "3.1 out of 4.0"
-      - title: "High School"
+      - title: "Bachelor of Science in Computer Science"
         school:
           name: "Mohonasen High School"
           url: "https://www.mohonasen.org/"
         date: "2016 - 2020"
         GPA: "3.3 out of 4.0"
+        content: |-
+          Extracurricular Activities
+            - National Honor Society Member: 2018 - 2020
+            - Secretary of Robotics Club
+            - Siena College High School Programming Contest: 2018
 
-  #Projects
+  # projects
   projects:
     enable: true
     items:
       - title: Charge Port EV Charging
-        content: Green Action Studio's mobile to give EV drivers access to Livingston Energy Group's EV network.
+        content: Green Action Studio's mobile application. I worked on adding a new stage to let users know to plug-in the cable to their vehicle. Worked on the backend API from the ground up using AWS Cloud Services.
         image: /Images/projects/chargeport.png
         badges:
-          - "React Native"
           - "TypeScript"
+          - "React Native"
           - "AWS Cloud Services"
           - "TailwindCSS"
+          - "MongoDB"
+          - "Node"
         links:
           - icon: fab fa-link
             url: https://apps.apple.com/us/app/charge-port-ev-charging/id1581494936
 
       - title: Back-End API
-        content: Back-End API to connect allow our different microservices to communicate to each other.
+        content: External API for Green Action Studio that connects multiple different microservices and applications together uisng AWS Cloud Services. Worked on the API from the ground up and connected it to the new Charge Port API.
+        image: /Images/projects/aws.jpg
         badges:
           - "TypeScript"
           - "AWS Cloud Services"
+          - "MongoDB"
+          - "Node"
 
       - title: Weather App
         content: A basic react based weather app using OpenWeather's API. More information can be found on the GitHub repo.
@@ -221,11 +264,11 @@ params:
             url: https://github.com/RaSingh02/team-website
 
       - title: RecipeBuddy
-        content: Semester project for CS350. A application to store recipes with functionality to see recipies, add, remove, and edit them. 
+        content: Semester project for CS350. A application to store recipes with functionality to see recipies, add, remove, and edit them.
         image: /Images/projects/recipebuddy.png
-        featured:
-          name: Demo
-          link: https://recipebuddy-ppsm.herokuapp.com/
+        # featured:
+        #   name: Demo
+        #   link: https://recipebuddy-ppsm.herokuapp.com/
         badges:
           - "JavaScript"
           - "CSS"
@@ -235,14 +278,24 @@ params:
           - icon: fab fa-github
             url: https://github.com/RaSingh02/RecipeBuddy
 
+  #Contact
   contact:
     enable: true
-    content: Don't hesitate to reach out. I'm always down to chat with new people. 
+    content: Feel free to contact me for any questions or if you just want to connect!
     email: ra.singh0502@gmail.com
     btnName: Send
 
   footer:
-    recentPosts: false
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: true
+      disableFeaturedImage: true
     socialNetworks:
       github: https://github.com/RaSingh02/
       linkedin: https://www.linkedin.com/in/randeep-singh-8096b31a5/
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
